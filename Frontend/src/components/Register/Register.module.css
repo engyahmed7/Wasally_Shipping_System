@@ -1,0 +1,88 @@
+.title{
+  font-family: 'Aboreto', 'cursive';
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bold;
+
+}
+.test {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #fd7402;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Aboreto', 'cursive';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  background-color:#fd7402;
+}
+
+.test:disabled {
+  pointer-events: none;
+}
+
+.test:hover {
+  color: #fff;
+  background-color: #fd7402;
+  box-shadow: #fd7402 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.test:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+  .userRegister input{
+    border-radius: 20px;
+    color: #000000;
+    border: solid 2px #fd7402;
+    width: 100%;    
+}
+.userRegister input:hover{
+  border: solid 2px #fd7402;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.userRegister input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000000;
+  opacity: 0.8; /* Firefox */
+}
+
+.userRegister input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000000;
+}
+
+.userRegister input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #000000;
+}
+.userRegister input:focus {
+  color: #000000;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+:-moz-placeholder {
+  text-align: center;
+}
+.Link{
+  text-decoration: none;
+}

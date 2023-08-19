@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  node-app:
+    build: .
+    image: node-app
+    command: tail -f /dev/null
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/node-boilerplate
+    ports:
+      - '3000:3000'
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/usr/src/node-app
+      - node_modules:/usr/src/node-app/node_modules
+    networks:
+      - node-network
+
+  mongodb:
+    image: mongo:4.2.1-bionic
+    ports:
+      - '27017:27017'
+    volumes:
+      - dbdata:/data/db
+    networks:
+      - node-network
+
+volumes:
+  dbdata:
+  node_modules:
+
+networks:
+  node-network:
+    driver: bridge
