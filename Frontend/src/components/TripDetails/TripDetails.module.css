@@ -1,0 +1,32 @@
+.dataform{
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(179, 178, 178,0.5);
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+
+}
+
+.dataform input{
+    border: 1px solid #ff9416;
+}
+
+.fButton{
+    color: #fff;
+    background-color: #ff9416;
+    border-color: #ff9416;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding: 12px 60px 12px;
+    font-size: 14px;
+    margin-top: 1px;
+    border-radius: 10px;
+  }
+  
+ .fButton:hover{
+    color: #ff9416;
+    background-color: #fff;
+    border-color: #ff9416;
+  }
+
+  
